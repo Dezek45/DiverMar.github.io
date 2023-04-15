@@ -4,270 +4,286 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/441dcc466f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Diver-Mar</title>
+    <title>Salón Eventos DiverMar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <!-- Encabezado -->
-    <header>
-      <div class="logo">Diver<span class="color">Mar</span></div>
-
-      <!-- Menú de Navegacion -->
-      <nav>
-        <ul>
-          <li><a href="#about">Sobre Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="paquetes.html">Paquetes de Servicios</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
+    <!--Cabecera-->
+    <header class="header" id="header-section">
+      <div class="container">
+        <div class="logo" id="main-logo">
+          <img src="DMfavicom.svg" alt="Logo de Diver-Mar" />
+          <h1><span class="diver">Diver</span><span class="mar">Mar</span></h1>
+        </div>
+        <div class="boton" id="menu-button">
+          <label for="btn-menu">Menú</label>
+        </div>
+        <input type="checkbox" id="btn-menu" />
+        <nav class="menu" id="main-menu">
+          <a href="#" class="menu-link">Inicio</a>
+          <a href="#" class="menu-link">Servicios</a>
+          <a href="#" class="menu-link">Galeria</a>
+          <a href="contacto.html" class="menu-link">Contacto</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-      <section>
-        <h2>Sobre Nosotros</h2>
-        <p>
-          En el Salón de Eventos Diver-Mar, nos dedicamos a brindar servicios de
-          alta calidad para la realización de eventos sociales y empresariales.
-          Contamos con una amplia experiencia y un equipo de profesionales que
-          se encargará de hacer que su evento sea único e inolvidable.
-        </p>
-      </section>
-      <section>
-        <h2>Lo que Ofrecemos</h2>
-        <p>
-          Ofrecemos una amplia variedad de servicios, desde catering y
-          decoración, hasta iluminación y sonido. Además, contamos con una
-          amplia gama de opciones para adaptarnos a las necesidades y
-          presupuesto de nuestros clientes.
-        </p>
-      </section>
-      <section>
-        <h2>Nuestro Compromiso</h2>
-        <p>
-          En el Salón de Eventos Diver-Mar, nos comprometemos a brindar un
-          servicio personalizado y de alta calidad. Nos aseguramos de que cada
-          detalle sea perfecto para que nuestros clientes puedan disfrutar de su
-          evento sin preocupaciones.
-        </p>
-      </section>
-    </main>
+    <!--Contenido Principal-->
+    <div id="contenido-principal" class="contenido-general">
+      <div class="card">
+        <figure>
+          <img src="imagen.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>Sobre Nosotros</h3>
+          <p>
+            En el Salón de Eventos Diver-Mar, nos dedicamos a brindar servicios
+            de alta calidad para la realización de eventos sociales y
+            empresariales. Contamos con una amplia experiencia y un equipo de
+            profesionales que se encargará de hacer que su evento sea único e
+            inolvidable.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="imagen2.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>Lo que Ofrecemos</h3>
+          <p>
+            Ofrecemos una amplia variedad de servicios, desde catering y
+            decoración, hasta iluminación y sonido. Además, contamos con una
+            amplia gama de opciones para adaptarnos a las necesidades y
+            presupuesto de nuestros clientes.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="imagen3.jpg" />
+        </figure>
+        <div class="contenido">
+          <h3>Nuestro Compromiso</h3>
+          <p>
+            En el Salón de Eventos Diver-Mar, nos comprometemos a brindar un
+            servicio personalizado y de alta calidad. Nos aseguramos de que cada
+            detalle sea perfecto para que nuestros clientes puedan disfrutar de
+            su evento sin preocupaciones.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Sección Sevicios -->
-    <section id="services">
-      <h2>Nuestros Servicios</h2>
-      <ul class="services-list">
-        <li>
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios-seccion">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+          <img src="catering.jpg" alt="Catering" />
           <h3>Catering</h3>
-          <div class="gallery">
-            <img
-              src="https://www.medicoslaspalmas.es/images/CIUDADANIA/restaurante/catering.jpg"
-              alt="Catering 1"
-            />
-            <!--  <img src="img/catering2.jpg" alt="Catering 2" />
-            <img src="img/catering3.jpg" alt="Catering 3" /> -->
-          </div>
           <p>
-            Ofrecemos una variedad de opciones de comida y bebida, desde menús
-            tradicionales hasta opciones vegetarianas y veganas. También podemos
-            adaptarnos a cualquier requerimiento especial o restricción
-            alimentaria.
+            Nuestro servicio de catering ofrece una amplia variedad de opciones
+            de comida para satisfacer los gustos de todos los invitados.
+            Trabajamos con los mejores proveedores para garantizar la frescura y
+            calidad de los alimentos.
           </p>
-        </li>
-        <li>
+        </div>
+        <div class="servicio">
+          <img src="decoracion.jpg" alt="Decoracion" />
           <h3>Decoración</h3>
-          <div class="gallery">
-            <img
-              src="https://i.pinimg.com/originals/e0/58/e8/e058e8110c0b106cfa4ed0f288958453.jpg"
-              alt="Decoración 1"
-            />
-            <!--  <img src="img/decoracion2.jpg" alt="Decoración 2" />
-            <img src="img/decoracion3.jpg" alt="Decoración 3" /> -->
-          </div>
           <p>
-            Nuestro equipo de decoradores profesionales se encargará de
-            transformar el salón en un ambiente elegante y sofisticado que se
-            adapte a la temática de su evento.
+            Nuestro equipo de diseñadores de interiores se encargará de crear
+            una atmósfera única y personalizada para tu evento. Trabajamos con
+            una amplia gama de opciones para adaptarnos a cualquier temática o
+            estilo que desees.
           </p>
-        </li>
-        <li>
+        </div>
+        <div class="servicio">
+          <img src="iluminacion.jpg" alt="Iluminacion y Sonido" />
           <h3>Iluminación y Sonido</h3>
-          <div class="gallery">
-            <img
-              src="https://th.bing.com/th/id/R.f8d266f4935fbe0505949b0e16379b93?rik=kL%2b5Hn2iFfc7nQ&riu=http%3a%2f%2fwww.divermagina.es%2fwp-content%2fuploads%2f2015%2f04%2fsonido-e-iluminacion-profesional-para-eventos-fiestas-valencia_3.jpg&ehk=lApuynrnh%2baayXb8eHodk0ZjFAjO0heWxOiDCduU3JE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-              alt="Iluminación 1"
-            />
-            <!--  <img src="img/iluminacion2.jpg" alt="Iluminación 2" />
-            <img src="img/iluminacion3.jpg" alt="Iluminación 3" /> -->
-          </div>
           <p>
-            Contamos con equipo de iluminación y sonido de alta calidad para
-            garantizar que la música y la iluminación sean perfectas durante su
-            evento.
+            Nuestro equipo de expertos en iluminación y sonido se asegurará de
+            que tu evento tenga el ambiente perfecto. Ofrecemos una amplia
+            variedad de opciones de iluminación y sonido para adaptarnos a tus
+            necesidades y preferencias.
           </p>
-        </li>
-        <li>
-          <h3>Mobiliario y Mantelería</h3>
-          <div class="gallery">
-            <img
-              src="https://image.jimcdn.com/app/cms/image/transf/dimension=920x10000:format=jpg/path/sf9179ad0c813e51b/image/i0eb3842b0235557d/version/1511063406/image.jpg"
-              alt="Mobiliario 1"
-            />
-            <!--  <img src="img/mobiliario2.jpg" alt="Mobiliario 2" />
-            <img src="img/mobiliario3.jpg" alt="Mobiliario 3" /> -->
-          </div>
+        </div>
+        <div class="servicio">
+          <img src="ornamentacion.jpg" alt="Ornamentacion" />
+          <h3>Ornamentación</h3>
           <p>
-            Ofrecemos una amplia variedad de opciones de mobiliario y mantelería
-            para adaptarse a cualquier tipo de evento, desde mesas y sillas
-            hasta manteles y cubiertos.
+            Nuestro equipo de expertos en ornamentación se encargará de crear un
+            ambiente mágico y especial para tu evento. Trabajamos con una amplia
+            gama de opciones para adaptarnos a cualquier temática o estilo que
+            desees.
           </p>
-        </li>
-        <li>
+        </div>
+        <div class="servicio">
+          <img src="asesoramiento.jpg" alt="Asesoramiento y Coordinación" />
           <h3>Asesoramiento y Coordinación</h3>
-          <div class="gallery">
-            <img
-              src="https://th.bing.com/th/id/R.c7fc800ba284f710bb2bfd1b301f3731?rik=LqWuo9hoPOg5mQ&riu=http%3a%2f%2ftics.org.mx%2fshare%2fsalon-de-fiestas-eventos1.jpg&ehk=7zq4S85wahoKKyXgVyCoUn6P3ta8ou0FYmY4cpKuvWw%3d&risl=&pid=ImgRaw&r=0"
-              alt="Asesoramiento 1"
-            />
-            <!--  <img src="img/asesoramiento2.jpg" alt="Asesoramiento 2" />
-            <img src="img/asesoramiento3.jpg" alt="Asesoramiento 3" /> -->
-          </div>
           <p>
-            Nuestro equipo de profesionales lo asesorará en todo lo relacionado
-            con la organización y coordinación de su evento, desde la selección
-            del menú hasta la planificación del entretenimiento y la
-            coordinación de los proveedores externos.
+            Nuestro equipo de expertos en eventos te asesorará y coordinará cada
+            detalle para garantizar el éxito de tu evento. Desde la
+            planificación hasta la ejecución, nos aseguramos de que todo sea
+            perfecto para ti y tus invitados.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion Galeria-->
+    <section id="galeria" class="gallery my-gallery">
+      <h2>Galería de eventos</h2>
+      <ul class="gallery-list">
+        <li class="gallery-item">
+          <h3>Bodas</h3>
+          <p>Una selección de fotos de nuestras bodas más memorables.</p>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img1.jpg" alt="Imagen 1" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img2.jpg" alt="Imagen 2" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img3.jpg" alt="Imagen 3" />
+            </a>
+          </div>
+        </li>
+        <li class="gallery-item">
+          <h3>15 Años</h3>
+          <p>Fotos de nuestros eventos de 15 años más emocionantes.</p>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img4.jpg" alt="Imagen 4" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img5.jpg" alt="Imagen 5" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img6.jpg" alt="Imagen 6" />
+            </a>
+          </div>
+        </li>
+        <li class="gallery-item">
+          <h3>Cumpleaños Infantiles</h3>
+          <p>
+            Algunas fotos de los cumpleaños infantiles más divertidos que hemos
+            organizado.
+          </p>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img7.jpg" alt="Imagen 7" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img8.jpg" alt="Imagen 8" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img9.jpg" alt="Imagen 9" />
+            </a>
+          </div>
+        </li>
+        <li class="gallery-item">
+          <h3>Eventos Formales</h3>
+          <p>Fotos de nuestros eventos más elegantes y sofisticados.</p>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img10.jpg" alt="Imagen 10" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img11.jpg" alt="Imagen 11" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img12.jpg" alt="Imagen 12" />
+            </a>
+          </div>
+        </li>
+        <li class="gallery-item">
+          <h3>Eventos Informales</h3>
+          <p>Fotos de nuestros eventos más relajados y divertidos.</p>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img13.jpg" alt="Imagen 13" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img14.jpg" alt="Imagen 14" />
+            </a>
+          </div>
+          <div class="gallery-img">
+            <a href="#">
+              <img src="img15.jpg" alt="Imagen 15" />
+            </a>
+          </div>
         </li>
       </ul>
     </section>
 
-    <!-- Sección Instalaciones -->
-    <section id="facilities">
-      <h2>Instalaciones</h2>
-      <div class="facilities-grid">
-        <div class="facility">
-          <img
-            src="https://th.bing.com/th/id/R.a8d21c2e03c3c1bdc5b137cfd384c287?rik=zPI%2fFVtKhMHXIA&pid=ImgRaw&r=0"
-            alt="Salón Principal"
-          />
-          <h3>Salón Principal</h3>
-          <p>
-            Amplio y elegante salón para eventos con capacidad para 200
-            personas.
-          </p>
+    <!--Pie de Página-->
+    <footer id="pie-pagina" class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="DMfavicom.svg" alt="Logo de Diver-Mar" />
+            </a>
+          </figure>
         </div>
-        <div class="facility">
-          <img
-            src="https://th.bing.com/th/id/R.597119e81935357f8f5ba3fdb7b20ed6?rik=XiiA6vMpRqHfdQ&riu=http%3a%2f%2fwww.maluz.cl%2fwp-content%2fuploads%2f2018%2f06%2fCEL05.jpg&ehk=1MKM2WnlUYO7cWv5F1F2yiCoboEOogZrhmfBt2rOwi8%3d&risl=&pid=ImgRaw&r=0"
-            alt="Cocina"
-          />
-          <h3>Cocina</h3>
-          <p>
-            Equipada con la mejor tecnología para garantizar la calidad y
-            frescura de los alimentos.
-          </p>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <div class="facility">
-          <img
-            src="https://i.pinimg.com/originals/f0/2d/8f/f02d8f47ab4c2cb82f08387ffd1ec710.jpg"
-            alt="Baños"
-          />
-          <h3>Baños</h3>
-          <p>Baños impecables y modernos para la comodidad de los invitados.</p>
-        </div>
-        <div class="facility">
-          <img
-            src="https://cdn0.matrimonio.com.pe/emp/fotos/8/4/8/5/entrada-principal.jpg"
-            alt="Entrada al Salón Principal"
-          />
-          <h3>Entrada al Salón Principal</h3>
-          <p>
-            Un elegante vestíbulo que conduce al salón principal, con detalles
-            de diseño únicos.
-          </p>
+        <div class="box">
+          <h2>POLÍTICAS</h2>
+          <ul>
+            <li>
+              <a href="politicas.html#politica-privacidad"
+                >Política de privacidad</a
+              >
+            </li>
+            <li>
+              <a href="politicas.html#terminos-condiciones"
+                >Términos y condiciones</a
+              >
+            </li>
+            <li>
+              <a href="politicas.html#politica-cancelacion"
+                >Política de cancelación</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contact">
-      <h2>Contacto</h2>
-
-      <div class="contact-columns">
-        <div class="contact-column">
-          <div class="contact-info">
-            <h3>Salón de Eventos DiverMar</h3>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> Dirección: Calle 123, Ciudad
-              ABC
-            </p>
-            <p><i class="fas fa-phone-alt"></i> Teléfono: +123 456 789</p>
-            <p><i class="fas fa-envelope"></i> Email: info@divermar.com</p>
-            <div class="social-media">
-              <h3>Síguenos</h3>
-              <ul>
-                <li>
-                  <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-column">
-          <div class="contact-info">
-            <h3>Dueño - Juan Pérez</h3>
-            <p><i class="fas fa-phone-alt"></i> Teléfono: +123 456 789</p>
-            <p><i class="fas fa-envelope"></i> Email: juan@divermar.com</p>
-            <div class="social-media">
-              <h3>Sígueme</h3>
-              <ul>
-                <li>
-                  <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-column">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.304378399927!2d-95.6890184230495!3d29.971775115545196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9cf384c29e7d5a5b!2sSalon%20de%20Eventos%20DiverMar!5e0!3m2!1sen!2sus!4v1653289713726!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>Diver-Mar</b> - Todos los Derechos Reservados.</small
+        >
       </div>
-    </section>
-
-    <!-- Pie de Página -->
-    <footer>
-      <p>Derechos reservados Salón Eventos Diver-Mar © 2023</p>
     </footer>
-    <!--Comentario para probar el remoto-->
   </body>
 </html>
